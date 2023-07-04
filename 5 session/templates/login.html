@@ -1,0 +1,13 @@
+{% extends "base.html" %} <!--stessa dir per semplificare con path rel.-->
+<!--uso scheletro di prima, ma sostituisco il blocco-->
+{% block title%} 
+    Home Page
+{% endblock %}
+{% block content %}
+<form action="#" method="post"> <!--# -> stessa pag-->
+    <p>Name:</p>
+    <p><input type="text" name="nm"></p>
+    <p><input type="submit" name="submit"></p>
+    </p>
+</form>
+{%endblock%}

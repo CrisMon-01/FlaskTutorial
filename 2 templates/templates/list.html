@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+    <body>
+        <h1>Home</h1>
+        {% for _ in range(0,10) %} <!--iterazione in python-->
+            <p>{{_}}</p>
+            {% if _ % 2 == 1 %}
+                <p>Dispari</p>
+            {% endif %}
+        {% endfor %}
+        {%for genre in genres%}
+            <p> genere: {{genre}}</p>
+            {% if genre == 'horror' %}
+                <p>Aiuto!</p>
+            {% elif genre == "love" %}
+                <p>Awww</p>
+            {%else%}
+                <p>Non so come reagire!</p>
+            {%endif%}
+        {% endfor %}
+    </body>
+
+</html>
